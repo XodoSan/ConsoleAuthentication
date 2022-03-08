@@ -1,0 +1,16 @@
+C:\Users\Андрей\source\repos\Test\Test\bin\Debug\net5.0\UserAuthorization.exe
+C:\Users\Андрей\source\repos\Test\Test\bin\Debug\net5.0\UserAuthorization.deps.json
+C:\Users\Андрей\source\repos\Test\Test\bin\Debug\net5.0\UserAuthorization.runtimeconfig.json
+C:\Users\Андрей\source\repos\Test\Test\bin\Debug\net5.0\UserAuthorization.runtimeconfig.dev.json
+C:\Users\Андрей\source\repos\Test\Test\bin\Debug\net5.0\UserAuthorization.dll
+C:\Users\Андрей\source\repos\Test\Test\bin\Debug\net5.0\ref\UserAuthorization.dll
+C:\Users\Андрей\source\repos\Test\Test\bin\Debug\net5.0\UserAuthorization.pdb
+C:\Users\Андрей\source\repos\Test\Test\obj\Debug\net5.0\UserAuthorization.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Андрей\source\repos\Test\Test\obj\Debug\net5.0\UserAuthorization.AssemblyInfoInputs.cache
+C:\Users\Андрей\source\repos\Test\Test\obj\Debug\net5.0\UserAuthorization.AssemblyInfo.cs
+C:\Users\Андрей\source\repos\Test\Test\obj\Debug\net5.0\UserAuthorization.csproj.CoreCompileInputs.cache
+C:\Users\Андрей\source\repos\Test\Test\obj\Debug\net5.0\UserAuthorization.dll
+C:\Users\Андрей\source\repos\Test\Test\obj\Debug\net5.0\ref\UserAuthorization.dll
+C:\Users\Андрей\source\repos\Test\Test\obj\Debug\net5.0\UserAuthorization.pdb
+C:\Users\Андрей\source\repos\Test\Test\obj\Debug\net5.0\UserAuthorization.genruntimeconfig.cache
+C:\Users\Андрей\source\repos\Test\Test\obj\Debug\net5.0\UserAuthorization.csproj.AssemblyReference.cache
