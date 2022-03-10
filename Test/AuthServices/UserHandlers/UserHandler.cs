@@ -5,11 +5,11 @@ using UserAuthorization.Entities;
 
 namespace UserAuthorization.AuthServices.UserHandlers
 {
-    public class UserHandler
+    public class UserHandler: IUserHandler
     {
-        public bool IsNewUser(List<User> users, string nickname)
+        public bool IsUserExists(List<User> users, string nickname)
         {
-            if (!users.Select(user => user.Nickname).Contains(nickname))
+            if (users.Select(user => user.Nickname).Contains(nickname))
             {
                 return true;
             }

@@ -14,3 +14,8 @@ C:\Users\Андрей\source\repos\Test\Test\obj\Debug\net5.0\ref\UserAuthorizat
 C:\Users\Андрей\source\repos\Test\Test\obj\Debug\net5.0\UserAuthorization.pdb
 C:\Users\Андрей\source\repos\Test\Test\obj\Debug\net5.0\UserAuthorization.genruntimeconfig.cache
 C:\Users\Андрей\source\repos\Test\Test\obj\Debug\net5.0\UserAuthorization.csproj.AssemblyReference.cache
+C:\Users\Андрей\source\repos\Test\Test\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Андрей\source\repos\Test\Test\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Андрей\source\repos\Test\Test\bin\Debug\net5.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Андрей\source\repos\Test\Test\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Андрей\source\repos\Test\Test\obj\Debug\net5.0\UserAuthorization.csproj.CopyComplete

@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "5mu5JuLsrJnqlh/0vYWBoXLMaeBrxFEIOdOVgpakSXVZvR9BPoCEE9yZ1nVh19QMqMK37g6x/Q3aQo8fm2wozw==",
+  "dgSpecHash": "ZeAU8uuU3KHzRm+g7NLJn08r0z7BC2klNr6sM5/0vFK2NwhiNttmRdffk0xF/8VxWCHdqA4n//HeJc55Ro8DqA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Андрей\\source\\repos\\Test\\Test\\UserAuthorization.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Андрей\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\Андрей\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Андрей\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
+    "C:\\Users\\Андрей\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Андрей\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Андрей\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
