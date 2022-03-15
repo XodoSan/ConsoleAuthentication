@@ -30,10 +30,10 @@ namespace UserAuthorization.AuthServices.RegistrationService
                 for (int i = 0; i < attemps; i++)
                 {
                     Console.Write("Enter password: ");
-                    string enteredPassword = Console.ReadLine();
+                    string enteredPassword = _authTools.EnterHidePassword();
 
                     Console.Write("Repeat your password: ");
-                    string confirmPassword = Console.ReadLine();
+                    string confirmPassword = _authTools.EnterHidePassword();
 
                     if (!_userHandler.IsEqualPasswords(enteredPassword, confirmPassword))
                     {

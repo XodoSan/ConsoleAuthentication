@@ -70,5 +70,24 @@ namespace UserAuthorization.Tools
 
             return users;
         }
+
+        public string EnterHidePassword()
+        {
+            string password = "";
+
+            while (true)
+            {
+                var key = Console.ReadKey(true);
+
+                if (key.Key == ConsoleKey.Enter) break;
+
+                Console.Write("*");
+                password += key.KeyChar;
+            }
+
+            Console.WriteLine("");
+
+            return password;
+        }
     }
 }

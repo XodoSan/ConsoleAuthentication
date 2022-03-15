@@ -42,6 +42,8 @@ namespace UserAuthorization.UserLocations.AdminMenu
             Console.WriteLine("Or out the program - \"out\"");
             string command = Console.ReadLine();
 
+            Console.Clear();
+
             switch (command)
             {
                 case "view":

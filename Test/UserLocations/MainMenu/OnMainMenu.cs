@@ -26,6 +26,8 @@ namespace UserAuthorization.UserLocations.MainMenu
             Console.WriteLine("Enter out to close program");
             string enteredCommand = Console.ReadLine();
 
+            Console.Clear();
+
             switch (enteredCommand)
             {
                 case "sign in":

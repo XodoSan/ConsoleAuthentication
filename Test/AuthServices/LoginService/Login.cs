@@ -31,7 +31,7 @@ namespace UserAuthorization.AuthServices.LoginService
                 for (int i = 0; i <= attemps; i++)
                 {
                     Console.Write("Enter your password: ");
-                    string enteredPassword = Console.ReadLine();
+                    string enteredPassword = _authTools.EnterHidePassword();
 
                     User thisUser = new User(nickname, enteredPassword, users
                         .Where(user => user.Nickname == nickname)

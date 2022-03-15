@@ -23,13 +23,13 @@ namespace UserAuthorization.AuthServices.ChangePasswordService
 
             Console.WriteLine("You need to enter a your last password to change him");
             Console.Write("Enter your password: ");
-            enteredPassword = Console.ReadLine();
+            enteredPassword = _authTools.EnterHidePassword();
 
             if (_userHandler.IsEqualPasswords(users[0].Password, enteredPassword))
             {
                 Console.Write("Enter your new password: ");
-                enteredPassword = Console.ReadLine();
-                
+                enteredPassword = _authTools.EnterHidePassword();
+
                 users[0].Password = enteredPassword;
                 _authTools.RecreateFile(users);
 

@@ -9,5 +9,6 @@ namespace UserAuthorization.Tools
         public void FileWriting(User user);
         public List<User> FileReading();
         public void RecreateFile(List<User> users);
+        public string EnterHidePassword();
     }
 }

@@ -25,6 +25,8 @@ namespace UserAuthorization.Statuses
             Console.WriteLine("Enter, \"out\" to out from you account");
             string enteredCommand = Console.ReadLine();
 
+            Console.Clear();
+
             switch (enteredCommand)
             {
                 case "change":
