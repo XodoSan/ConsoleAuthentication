@@ -18,7 +18,7 @@ namespace UserAuthorization.UserLocations.MainMenu
             _login = login;
         }
         
-        public (Status, List<User>) ToMainMenu(List<User> users)
+        public (Status, List<User>) CallMainMenu(List<User> users)
         {
             int status;
 
@@ -39,7 +39,7 @@ namespace UserAuthorization.UserLocations.MainMenu
                     Console.WriteLine("Admin of this task: Andrew Shvetsov BI-21");
                     return ((Status) 0, users);
                 case "out":
-                    return ((Status) 2, users);
+                    return ((Status) 3, users);
                 default:
                     Console.WriteLine("Invalid command");
                     return ((Status) 0, users);

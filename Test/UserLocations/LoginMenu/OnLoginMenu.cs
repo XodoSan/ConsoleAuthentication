@@ -16,7 +16,7 @@ namespace UserAuthorization.Statuses
             _changePassword = changePassword;
         }
 
-        public (Status, List<User>) ToLoginMenu(List<User> users)
+        public (Status, List<User>) CallLoginMenu(List<User> users)
         {
             int status;
 

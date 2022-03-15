@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UserAuthorization.Entities;
@@ -11,9 +12,10 @@ namespace UserAuthorization.Tools
 
         public enum Status
         {
-            StayOnMainMenu = 0,
-            StayOnLoginMenu = 1,
-            Out = 2
+            ToMainMenu = 0,
+            ToLoginMenu = 1,
+            ToAdminMenu = 2,
+            Out = 3
         }
 
         public List<User> MoveToBegin(List<User> users, User thisUser)
@@ -32,7 +34,9 @@ namespace UserAuthorization.Tools
             {
                 writer.WriteAsync(user.Nickname);
                 writer.WriteAsync(" ");
-                writer.WriteLineAsync(user.Password);
+                writer.WriteAsync(user.Password);
+                writer.WriteAsync(" ");
+                writer.WriteLineAsync(user.IsBanned.ToString());
             }
         }
 
@@ -44,7 +48,9 @@ namespace UserAuthorization.Tools
                 {
                     writer.WriteAsync(users[i].Nickname);
                     writer.WriteAsync(" ");
-                    writer.WriteLineAsync(users[i].Password);
+                    writer.WriteAsync(users[i].Password);
+                    writer.WriteAsync(" ");
+                    writer.WriteLineAsync(users[i].IsBanned.ToString());
                 }
             }
         }
@@ -58,7 +64,7 @@ namespace UserAuthorization.Tools
                 string? line;
                 while ((line = reader.ReadLine()) != null)
                 {
-                    users.Add(new User(line.Split(" ")[0], line.Split(" ")[1]));
+                    users.Add(new User(line.Split(" ")[0], line.Split(" ")[1], Convert.ToBoolean(line.Split(" ")[2])));
                 }
             }
 

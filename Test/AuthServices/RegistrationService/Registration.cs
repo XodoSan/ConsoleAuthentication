@@ -20,7 +20,7 @@ namespace UserAuthorization.AuthServices.RegistrationService
         public List<User> UserRegistration(List<User> users)
         {
             Console.WriteLine("Enter your nickname, password and repeat password to sign up");
-            Console.WriteLine("Enter your nickname");
+            Console.Write("Enter your nickname: ");
             string nickname = Console.ReadLine();
 
             if (!_userHandler.IsUserExists(users, nickname))
@@ -29,10 +29,10 @@ namespace UserAuthorization.AuthServices.RegistrationService
 
                 for (int i = 0; i < attemps; i++)
                 {
-                    Console.WriteLine("Enter password");
+                    Console.Write("Enter password: ");
                     string enteredPassword = Console.ReadLine();
 
-                    Console.WriteLine("Repeat your password");
+                    Console.Write("Repeat your password: ");
                     string confirmPassword = Console.ReadLine();
 
                     if (!_userHandler.IsEqualPasswords(enteredPassword, confirmPassword))
@@ -41,7 +41,7 @@ namespace UserAuthorization.AuthServices.RegistrationService
                         continue;
                     }
 
-                    _authTools.FileWriting(new User(nickname, enteredPassword));
+                    _authTools.FileWriting(new User(nickname, enteredPassword, false));
                     users = _authTools.FileReading();
 
                     Console.WriteLine("Registation successfuly!");

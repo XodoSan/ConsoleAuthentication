@@ -22,12 +22,12 @@ namespace UserAuthorization.AuthServices.ChangePasswordService
             string enteredPassword;
 
             Console.WriteLine("You need to enter a your last password to change him");
-            Console.WriteLine("Enter your password");
+            Console.Write("Enter your password: ");
             enteredPassword = Console.ReadLine();
 
             if (_userHandler.IsEqualPasswords(users[0].Password, enteredPassword))
             {
-                Console.WriteLine("Enter your new password");
+                Console.Write("Enter your new password: ");
                 enteredPassword = Console.ReadLine();
                 
                 users[0].Password = enteredPassword;

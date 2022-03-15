@@ -6,6 +6,6 @@ namespace UserAuthorization.UserLocations.MainMenu
 {
     public interface IOnMainMenu
     {
-        public (Status, List<User>) ToMainMenu(List<User> users);
+        public (Status, List<User>) CallMainMenu(List<User> users);
     }
 }
