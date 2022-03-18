@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using UserAuthorization.AuthServices.BanningUsersService;
@@ -12,6 +11,7 @@ using UserAuthorization.AuthServices.UserHandlers;
 using UserAuthorization.Entities;
 using UserAuthorization.Statuses;
 using UserAuthorization.Tools;
+using UserAuthorization.Tools.HashingAlghoritmTool;
 using UserAuthorization.UserLocations;
 using UserAuthorization.UserLocations.AdminMenu;
 using UserAuthorization.UserLocations.MainMenu;
@@ -35,6 +35,7 @@ namespace Test
                 .AddSingleton<IBrowsingUsers, BrowsingUsers>()
                 .AddSingleton<IResetPassword, ResetPassword>()
                 .AddSingleton<IBanningUsers, BanningUsers>()
+                .AddSingleton<IHashingAlgorithm, HashingAlgorithm>()
                 .BuildServiceProvider();
 
             var onLoginMenu = serviceProvider.GetService<IOnLoginMenu>();

@@ -4,6 +4,7 @@ using System.Linq;
 using UserAuthorization.AuthServices.UserHandlers;
 using UserAuthorization.Entities;
 using UserAuthorization.Tools;
+using UserAuthorization.Tools.HashingAlghoritmTool;
 
 namespace UserAuthorization.AuthServices.LoginService
 {
@@ -11,11 +12,18 @@ namespace UserAuthorization.AuthServices.LoginService
     {
         private readonly IUserHandler _userHandler;
         private readonly IAuthTools _authTools;
+        private readonly IHashingAlgorithm _hashingAlgorithm;
 
-        public Login(IUserHandler userHandler, IAuthTools authTools)
+        public Login
+        (
+            IUserHandler userHandler, 
+            IAuthTools authTools, 
+            IHashingAlgorithm hashingAlgorithm
+        )
         {
             _userHandler = userHandler;
             _authTools = authTools;
+            _hashingAlgorithm = hashingAlgorithm;
         }
 
         public (int, List<User>) UserLogin(List<User> users)
@@ -32,6 +40,12 @@ namespace UserAuthorization.AuthServices.LoginService
                 {
                     Console.Write("Enter your password: ");
                     string enteredPassword = _authTools.EnterHidePassword();
+
+                    List<char> charArrayPassword = enteredPassword
+                            .ToCharArray()
+                            .ToList();
+
+                    enteredPassword = _hashingAlgorithm.GetHash(charArrayPassword);
 
                     User thisUser = new User(nickname, enteredPassword, users
                         .Where(user => user.Nickname == nickname)
