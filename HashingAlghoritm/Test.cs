@@ -5,7 +5,7 @@ namespace HashingAlghoritm
 {
     public class Test
     {
-        public int CollisionTest(List<string> hashs)
+        public int HashCollisionTest(List<string> hashs)
         {
             int collisionCounter = 0;
 
@@ -20,6 +20,28 @@ namespace HashingAlghoritm
             }
 
             return collisionCounter;
+        }
+
+        public List<string> WordCollisionTest(List<string> words)
+        {
+            List<string> newWords = new();
+            
+            for (int i = 0; i < words.Count(); i++)
+            {
+                if (words.Contains(words[i]))
+                {
+                    string temp = words[i];
+                    newWords.Add(temp);
+                    words[i] = "";
+
+                    if (words.Contains(temp))
+                    {
+                        newWords.Remove(temp);
+                    }
+                }
+            }
+
+            return newWords;
         }
     }
 }

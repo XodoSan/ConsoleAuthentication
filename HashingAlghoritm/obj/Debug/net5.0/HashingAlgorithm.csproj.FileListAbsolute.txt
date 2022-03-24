@@ -1,0 +1,16 @@
+C:\Users\Андрей\source\repos\Test\HashingAlghoritm\bin\Debug\net5.0\HashingAlgorithm.exe
+C:\Users\Андрей\source\repos\Test\HashingAlghoritm\bin\Debug\net5.0\HashingAlgorithm.deps.json
+C:\Users\Андрей\source\repos\Test\HashingAlghoritm\bin\Debug\net5.0\HashingAlgorithm.runtimeconfig.json
+C:\Users\Андрей\source\repos\Test\HashingAlghoritm\bin\Debug\net5.0\HashingAlgorithm.runtimeconfig.dev.json
+C:\Users\Андрей\source\repos\Test\HashingAlghoritm\bin\Debug\net5.0\HashingAlgorithm.dll
+C:\Users\Андрей\source\repos\Test\HashingAlghoritm\bin\Debug\net5.0\ref\HashingAlgorithm.dll
+C:\Users\Андрей\source\repos\Test\HashingAlghoritm\bin\Debug\net5.0\HashingAlgorithm.pdb
+C:\Users\Андрей\source\repos\Test\HashingAlghoritm\obj\Debug\net5.0\HashingAlgorithm.csproj.AssemblyReference.cache
+C:\Users\Андрей\source\repos\Test\HashingAlghoritm\obj\Debug\net5.0\HashingAlgorithm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Андрей\source\repos\Test\HashingAlghoritm\obj\Debug\net5.0\HashingAlgorithm.AssemblyInfoInputs.cache
+C:\Users\Андрей\source\repos\Test\HashingAlghoritm\obj\Debug\net5.0\HashingAlgorithm.AssemblyInfo.cs
+C:\Users\Андрей\source\repos\Test\HashingAlghoritm\obj\Debug\net5.0\HashingAlgorithm.csproj.CoreCompileInputs.cache
+C:\Users\Андрей\source\repos\Test\HashingAlghoritm\obj\Debug\net5.0\HashingAlgorithm.dll
+C:\Users\Андрей\source\repos\Test\HashingAlghoritm\obj\Debug\net5.0\ref\HashingAlgorithm.dll
+C:\Users\Андрей\source\repos\Test\HashingAlghoritm\obj\Debug\net5.0\HashingAlgorithm.pdb
+C:\Users\Андрей\source\repos\Test\HashingAlghoritm\obj\Debug\net5.0\HashingAlgorithm.genruntimeconfig.cache

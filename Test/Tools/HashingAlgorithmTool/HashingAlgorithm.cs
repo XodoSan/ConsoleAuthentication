@@ -13,8 +13,15 @@ namespace UserAuthorization.Tools.HashingAlghoritmTool
 
             for (int i = 0; i < myStr.Length; i++)
             {
+                if (i != 0) myStr[i] += myStr[i - 1];
+                else myStr[i] += myStr[i + 1];
+                myStr[i] = (char)Filter(myStr[i]);
+            }
+
+            for (int i = myStr.Length - 1; i >= 0; i--)
+            {
                 if (i != myStr.Length - 1) myStr[i] += myStr[i + 1];
-                if (i != 0 && i != myStr.Length) myStr[i] += myStr[i - 1];
+                else myStr[i] += myStr[i - 1];
                 myStr[i] = (char)Filter(myStr[i]);
             }
 
@@ -27,7 +34,7 @@ namespace UserAuthorization.Tools.HashingAlghoritmTool
             while (true)
             {
                 if (x < 35) x = (x * x % 19) + 35;
-                else if (x > 126) x = x & 126;
+                else if (x > 126) x = x % 126;
                 else return x;
             }
         }
